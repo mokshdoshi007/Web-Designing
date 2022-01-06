@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .boxes
+        {
+                white-space: nowrap;
+                overflow-x: scroll;
+                overflow-y: hidden;
+        }
+        ::-webkit-scrollbar 
+        {
+            width: 0;
+        }
+        .box
+        {
+            box-shadow: 0 0 50px gray;
+            display: inline-block;
+            border-radius: 20px;
+            padding: 15px;
+            margin: 30px;
+        }
+        .box:hover
+        {
+            box-shadow: 0 0 50px red;
+        }
+        img
+        {
+            height: 120px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes" id="boxes">
+    </div>
+    <script>
+        var p = [
+            {firstname:'Moksh', lastname:'Doshi', age:20},
+            {firstname:'Mridul', lastname:'Rathore', age:25},
+            {firstname:'Nidhi', lastname:'Roy', age:21},
+            {firstname:'Sneh', lastname:'Patel', age:20},
+            {firstname:'Nimit', lastname:'Shah', age:19},
+            {firstname:'Manaavi', lastname:'Mahajan', age:21},
+            {firstname:'Archit', lastname:'Dalania', age:20},
+            {firstname:'Manal', lastname:'Patel', age:22},
+            {firstname:'Kirtan', lastname:'Patel', age:21},
+            {firstname:'Pranjal', lastname:'Patel', age:20},
+        ]
+
+        var text=""
+        for(var i=0; i<10; i++)
+        {
+            text+="<div class='box'><img src='images/i"+i+".jpg'"+"<br><h1>"+p[i].firstname+" "+p[i].lastname+"</h1>"+"<h3>"+p[i].age+"</h3></div>"
+        }
+        document.getElementById("boxes").innerHTML = text
+    </script>
+</body>
+</html>

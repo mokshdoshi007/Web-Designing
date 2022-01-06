@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .boxes
+        {
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .box
+        {
+            box-shadow: 0 0 50px gray;
+            display: inline-block;
+            border-radius: 20px;
+            padding: 15px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+    <div class="box">
+        <img src="images/istockphoto.jpg" style="height: 120px;">
+        <h1 id="name0"></h1>
+        <h3 id="age0"></h3>
+    </div>
+    <div class="box">
+        <img src="images/istockphoto.jpg" style="height: 120px;">
+        <h1 id="name1"></h1>
+        <h3 id="age1"></h3>
+    </div>
+    <div class="box">
+        <img src="images/istockphoto.jpg" style="height: 120px;">
+        <h1 id="name2"></h1>
+        <h3 id="age2"></h3>
+    </div>
+    <div class="box">
+        <img src="images/istockphoto.jpg" style="height: 120px;">
+        <h1 id="name3"></h1>
+        <h3 id="age3"></h3>
+    </div>
+    <div class="box">
+        <img src="images/istockphoto.jpg" style="height: 120px;">
+        <h1 id="name4"></h1>
+        <h3 id="age4"></h3>
+    </div>
+    <div class="box">
+        <img src="images/istockphoto.jpg" style="height: 120px;">
+        <h1 id="name5"></h1>
+        <h3 id="age5"></h3>
+    </div>
+    <div class="box">
+        <img src="images/istockphoto.jpg" style="height: 120px;">
+        <h1 id="name6"></h1>
+        <h3 id="age6"></h3>
+    </div>
+    <div class="box">
+        <img src="images/istockphoto.jpg" style="height: 120px;">
+        <h1 id="name7"></h1>
+        <h3 id="age7"></h3>
+    </div>
+    <div class="box">
+        <img src="images/istockphoto.jpg" style="height: 120px;">
+        <h1 id="name8"></h1>
+        <h3 id="age8"></h3>
+    </div>
+    <div class="box">
+        <img src="images/istockphoto.jpg" style="height: 120px;">
+        <h1 id="name9"></h1>
+        <h3 id="age9"></h3>
+    </div>
+    </div>
+    <script>
+        var p = [
+            {firstname:'Moksh', lastname:'Doshi', age:20},
+            {firstname:'Mridul', lastname:'Rathore', age:25},
+            {firstname:'Nidhi', lastname:'Roy', age:21},
+            {firstname:'Moksh', lastname:'Doshi', age:20},
+            {firstname:'Mridul', lastname:'Rathore', age:25},
+            {firstname:'Nidhi', lastname:'Roy', age:21},
+            {firstname:'Moksh', lastname:'Doshi', age:20},
+            {firstname:'Mridul', lastname:'Rathore', age:25},
+            {firstname:'Nidhi', lastname:'Roy', age:21},
+            {firstname:'Moksh', lastname:'Doshi', age:20},
+        ]
+
+        document.getElementById("name0").innerHTML = p[0].firstname + " " + p[0].lastname
+        document.getElementById("age0").innerHTML = p[0].age
+
+        document.getElementById("name1").innerHTML = p[1].firstname + " " + p[1].lastname
+        document.getElementById("age1").innerHTML = p[1].age
+
+        document.getElementById("name2").innerHTML = p[2].firstname + " " + p[2].lastname
+        document.getElementById("age2").innerHTML = p[2].age
+
+        document.getElementById("name3").innerHTML = p[3].firstname + " " + p[3].lastname
+        document.getElementById("age3").innerHTML = p[3].age
+
+        document.getElementById("name4").innerHTML = p[4].firstname + " " + p[4].lastname
+        document.getElementById("age4").innerHTML = p[4].age
+
+        document.getElementById("name5").innerHTML = p[5].firstname + " " + p[5].lastname
+        document.getElementById("age5").innerHTML = p[5].age
+
+        document.getElementById("name6").innerHTML = p[6].firstname + " " + p[6].lastname
+        document.getElementById("age6").innerHTML = p[6].age
+
+        document.getElementById("name7").innerHTML = p[7].firstname + " " + p[7].lastname
+        document.getElementById("age7").innerHTML = p[7].age
+
+        document.getElementById("name8").innerHTML = p[8].firstname + " " + p[8].lastname
+        document.getElementById("age8").innerHTML = p[8].age
+
+        document.getElementById("name9").innerHTML = p[9].firstname + " " + p[9].lastname
+        document.getElementById("age9").innerHTML = p[9].age
+    </script>
+</body>
+</html>

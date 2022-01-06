@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        counter-reset: section;
+      }
+
+      h1 {
+        counter-reset: subsection;
+      }
+
+      h1::before {
+        counter-increment: section;
+        content: "Module " counter(section) ") ";
+      }
+
+      h2::before {
+        counter-increment: subsection;
+        content: counter(section) "." counter(subsection) " - ";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WD - HTML and HTML5</h1>
+    <h2>
+      1) HTML Doctypes 2) HTML Layout 3) HTML Head 4) HTML Meta 5) HTML Scripts
+    </h2>
+    <h2>
+      1) HTML Introduction 2) HTML Getting Started 3) HTML Elements 4) HTML
+      Attributes
+    </h2>
+    <h2>
+      Practical Examples: 1) Create any simple web page to display your name. 2)
+      Importance of meta tag and Doctypes
+    </h2>
+    <h2>
+      HTML Headings HTML Paragraphs HTML Links HTML Text Formatting HTML Styles
+      HTML Images
+    </h2>
+    <h2>
+      PRactical Examples: 1) Create simple Doc and display your name using
+      different heading tag 2) Create link for open google. 3) Create document
+      using all text formatting tags
+    </h2>
+    <h2>HTML Tables HTML Lists HTML Forms HTML Iframes</h2>
+    <h2>
+      Practical Examples: 1) Create simple table 2) Create time table for your
+      school 3) Create table with colspanrowspan example 4) Create invoice using
+      table 5) Create hotel menu. 6) Create index page for your book. 7) Create
+      list with different categories.
+    </h2>
+    <h2>HTML Entities HTML Validation HTML-HTML5 Tags</h2>
+    <h2>
+      PRactical Examples: Create registration form with all fields and
+      validation
+    </h2>
+    <h1>WD - CSS and CSS 3</h1>
+
+    <h2>
+      1) CSS 2) In-line CSS Internal Style External Style Sheet @import Style
+      Sheet 3) CSS Class CSS ID
+    </h2>
+    <h2>Practical example : Create page with difference color text</h2>
+    <h2>
+      1) CSS Text 2)CSS Font 3) CSS Background 4) CSS Links 5) CSS Lists 6) CSS
+      Display 7) CSS Visibility
+    </h2>
+    <h2>PRactical Example : Create layout for your project</h2>
+    <h2>
+      1) CSS Layout Model 2) CSS Border 3) CSS Margin 4) CSS Padding 5) CSS
+      Outline
+    </h2>
+    <h2>
+      1) CSS Float 2) CSS Align 3) CSS Position 4) CSS Element Size 5) CSS Layer
+    </h2>
+    <h2>Practical Example : Create image gallery</h2>
+    <h2>1) CSS Pseudo Class Selector 2) CSS Pseudo Element Selector</h2>
+    <h2>
+      CSS Properties 1) Background, 2) border 3) bottom 4) caption-side 5) clear
+      6) clip 7) color 8) content
+    </h2>
+    <h2>
+      Practical Example: Create Menu with logo at left side and contact info at
+      right side using clear effect
+    </h2>
+    <h2>
+      1) counter-increment 2) counter-reset 3) cursor 4) direction 5) display 6)
+      empty-cells
+    </h2>
+    <h2>Practical Example: 1) Create submenu list using counter</h2>
+    <h2>
+      1) float 2) font 3) height 4) left 5) letter-spacing 6) line [height,
+      style, style-7) image, style-position, 8) style-type] 9) margin 10)
+      outline 11) overflow 12) padding
+    </h2>
+    <h2>
+      1) page-break 2) position 3) quotes 4) right 5) table-layout 6) text 7)
+      top 8) vertical-align 9) visibility 10) white-space 11) width 12)
+      word-spacing 13) z-index
+    </h2>
+    <h2>Practical Example: wireframe layout for your template using div</h2>
+
+    <h1>WD - JAVASCRIPT BASIC & DOM</h1>
+    <h2>
+      1) JS Introduction 2) JS Getting Started 3) JS Syntax 4) JS Variables 5)
+      JS Generating Output 6) JS Data Types 7) JS Operators 8) JS Events 9) JS
+      Strings 10) JS Numbers 11) JS If, Else 12) JS Switch Case
+    </h2>
+    <h2>
+      Practical Example: 1) Create program for input color and output that code
+      2) Create program for pattern using loop
+    </h2>
+    <h2>
+      a) JS Arrays b) JS Sorting Arrays c) JS Loops d) JS Functions e) JS
+      Objects
+    </h2>
+    <h2>
+      Practical Example: 1) Create function Finding the Maximum and Minimum
+      Value in an Array 2) Create pyramid pattern program
+    </h2>
+    <h2>
+      JAVASCRIPT & DOM 1) JS DOM Nodes 2) JS DOM Selectors 3) JS DOM Styling 4)
+      JS DOM Get Set Attributes 5) JS DOM Manipulation 6) JS DOM Navigation
+    </h2>
+    <h2>
+      Practical Examples: 1) Get input data and perform different operations 2)
+      Make dynamic CSS by click
+    </h2>
+    <h2>
+      JAVASCRIPT ADVANCED 1) JS Date and Time 2) JS Math Operations 3) JS Type
+      Conversions 4) JS Event Listener 5) JS Regular Expressions 6) JS Error
+      Handling
+    </h2>
+    <h2>Practical Example: Create custom Validation</h2>
+    <h1>WD - JQuery Basic, Effects & Advanced</h1>
+    <h2>
+      jQuery Basic a) jQuery Introduction b) jQuery Getting Started c) jQuery
+      Syntax d) jQuery Selectors e) jQuery Events
+    </h2>
+    <h2>Practical Example: Change CSS</h2>
+    <h2>
+      JQuery Effects 1) jQuery Show/Hide 2) jQuery Fade 3) jQuery Slide 4)
+      jQuery Animation 5) jQuery Stop 6) jQuery Chaining 7) jQuery Callback
+    </h2>
+    <h2>Practical Example: Create slider with animation</h2>
+    <h2>
+      JQuery Advanced 1) jQuery Traversing 2) jQuery Ancestors 3) jQuery
+      Descendants 4) jQuery Siblings 5) jQuery Filtering 6) jQuery Load 7)
+      jQuery No-Conflict
+      <h1>WD - Bootstrap Basic Advanced</h1>
+    </h2>
+    <h2>
+      Bootstrap Basic 1) Bootstrap Introduction 2) Bootstrap Getting Started 3)
+      Bootstrap Grid System 4) Bootstrap Fixed Layout 5) Bootstrap Fluid Layout
+      6) Bootstrap Responsive Layout
+    </h2>
+    <h2>Practical Example: Create Navigation Menu</h2>
+    <h2>
+      1) Bootstrap Typography 2) Bootstrap Tables 3) Bootstrap Lists 4)
+      Bootstrap List Groups 5) Bootstrap Forms 6) Bootstrap Custom Forms 7)
+      Bootstrap Input Groups 8) Bootstrap Buttons 9) Bootstrap Button Groups
+    </h2>
+    <h2>Practical Example: Create login registration form</h2>
+    <h2>
+      1) Bootstrap Images 2) Bootstrap Cards 3) Bootstrap Media Objects 4)
+      Bootstrap Icons 5) Bootstrap Navs 6) Bootstrap Navbar 7) Bootstrap
+      Breadcrumbs 8) Bootstrap Pagination 9) Bootstrap Badges 10) Bootstrap
+      Progress Bars 11) Bootstrap Spinners 12) Bootstrap Jumbotron 13) Bootstrap
+      Helper Classes
+    </h2>
+    <h2>
+      Practical Example: 1) Create image gallery 2) Create model for login
+      Product list page with pagination
+    </h2>
+    <h2>
+      Bootstrap Advanced 1) Bootstrap Modals 2) Bootstrap Dropdowns 3) Bootstrap
+      Tabs 4) Bootstrap Tooltips 5) Bootstrap Popovers 6) Bootstrap Alerts 7)
+      Bootstrap Stateful Buttons 8) Bootstrap Accordion 9) Bootstrap Carousel
+      10) Bootstrap Typeahead 11) Bootstrap ScrollSpy 12) Bootstrap Toasts
+    </h2>
+    <h2>Practical Example: Create your project website using bootstrap</h2>
+  </body>
+</html>

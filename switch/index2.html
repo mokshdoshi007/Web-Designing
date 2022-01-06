@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <ol>
+        <li onclick="menu(0)">Home</li>
+        <li onclick="menu(1)">About</li>
+        <li onclick="menu(2)">Contact</li>
+    </ol>
+    <div id="Home">This is Home</div>
+    <div id="About">This is About</div>
+    <div id="Contact">This is Contact</div>
+    <script>
+        
+                    document.getElementById("Home").style.display="none"
+                    document.getElementById("About").style.display="none"
+                    document.getElementById("Contact").style.display="none"
+        function menu(item) {
+            switch(item)
+            {
+                case 0:
+                    document.getElementById("Home").style.display="block"
+                    document.getElementById("About").style.display="none"
+                    document.getElementById("Contact").style.display="none"
+                    break
+                case 1:
+                    document.getElementById("Home").style.display="none"
+                    document.getElementById("About").style.display="block"
+                    document.getElementById("Contact").style.display="none"
+                    break
+                case 2:
+                    document.getElementById("Home").style.display="none"
+                    document.getElementById("About").style.display="none"
+                    document.getElementById("Contact").style.display="block"
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

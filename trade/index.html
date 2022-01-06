@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .navbar
+        {
+            background-color: lightseagreen;
+            overflow: hidden;
+        }
+        .navbar ol
+        {
+            float: right;
+            list-style: none;
+            width: 40%;
+        }
+        .navbar ol li
+        {
+            margin-right: 5%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+            border-radius: 25px;
+            background: transparent;
+            float: left;
+        }
+        .navbar ol li:hover
+        {
+            background: white;
+            color: black;
+        }
+        .cont
+        {
+            background-image: url(images/abstract-blue-geometric-shapes-background_1035-17545.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .functions
+        {
+            white-space: nowrap;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        .pricing
+        {
+            background-color: lightseagreen;
+            color: white;
+        }
+        button:hover
+        {
+            background-color: lightseagreen; 
+            color: white; 
+            border: none;
+        }
+        button
+        {
+            background-color: white; 
+            padding-top: 10px; 
+            padding-bottom: 10px; 
+            padding-left: 20px; 
+            padding-right: 20px; 
+            color: gray;
+            border: 2px solid gray;
+            border-radius: 25px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="navbar"></div>
+    <div class="cont">
+        <div style="width: 30%; padding: 10%; float: left;">
+            <h2>Complete <br> Software Solutions</h1><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam commodi unde expedita vitae pariatur saepe possimus enim atque consectetur id obcaecati neque amet dolore, est voluptatum necessitatibus porro, maiores aut!</p><br>
+            <button>Get Started</button>
+        </div>
+        <div style="width: 40%; padding: 5%; float: left;">
+            <img src="images/ImgW-removebg-preview.png" alt="">
+        </div>
+    </div>
+    <center>
+        <div style="width: 50%;">
+            <h2>How It Works?</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt molestiae repudiandae magnam officia aut architecto voluptate ea quibusdam neque laborum, corporis itaque qui, nesciunt nostrum, illo labore delectus dicta consequuntur!</p><br>
+            <div id="functions"></div>
+        </div>
+    
+    <div id="pricing" class="pricing">
+    </div>
+</center>
+    <script>
+        var navitems = ["Features", "Pricing","Contact","Login"]
+        var functs = ["Exclusive Design","Lifetime Supports","Extreme Security"]
+        var priceplan = ["FREE","STANDARD","BASIC"]
+        var price = ["$0.00","$8.50","$19.40"]
+        var text=""
+        for(var i=0; i<navitems.length; i++)
+        {
+            text+="<li>"+navitems[i]+"</li>"
+        }
+        document.getElementById("navbar").innerHTML="<ol>"+text+"</ol>"
+        var text=""
+        for(var i=0; i<functs.length; i++)
+        {
+            text+="<div style='display: inline-block; margin-right:5%;'><img style='width: 100px;height: 100px;' src='images/i"+i+".jpg'><br><h3>"+functs[i]+"</h3></div>"
+        }
+        document.getElementById("functions").innerHTML=text
+        var text="<br><br><h2>Pricing</h2><p style='width: 40%;'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt molestiae repudiandae magnam officia aut architecto voluptate ea quibusdam neque laborum, corporis itaque qui, nesciunt nostrum, illo labore delectus dicta consequuntur!</p><br><br>"
+        for(var i=0; i<priceplan.length; i++)
+        {
+            text+="<div style='padding:50px; width:10%; background-color:white; color:black; display: inline-block; margin-right:5%;'>"+priceplan[i]+"<br><h2>"+price[i]+"</h2>4 TB Storage<br>8GB RAM<br>Unlimited Bandwidth<br>Webmail Support<br><br><br><button>Get Started</button></div>"
+        }
+        document.getElementById("pricing").innerHTML=text+"<br><br><br><br>"
+    </script>
+</body>
+</html>
