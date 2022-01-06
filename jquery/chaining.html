@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        div
+        {
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top:100px
+        }
+        .p1
+        {
+            background-color: palevioletred;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">jquery is fun!</p>
+    <button>Start Animation</button>
+    <div></div>
+    
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $("div").slideUp(1000).slideDown(1000);
+            });
+            $("#p1").mouseenter(function()
+            {
+                $(this).addClass("p1");
+            });
+            $("#p1").mouseleave(function()
+            {
+                $(this).removeClass("p1");
+            });
+        });
+    </script>
+</body>
+</html>

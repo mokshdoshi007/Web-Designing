@@ -1,0 +1,117 @@
+body
+{
+    background-image: linear-gradient( rgb(54, 182, 224) 2%, blue 47%, rgb(3, 3, 247) 47%) ;
+    height: 650px;
+}
+.box1
+{
+    position: fixed;
+    top: 400px;
+    left: 100px;
+    background-image: url(https://w7.pngwing.com/pngs/872/50/png-transparent-computer-icons-social-media-logo-twitter-social-media-blue-logo-social-media-thumbnail.png);
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightslategray;
+    width: 75px;
+    height: 75px;
+    z-index: 2;
+}
+.box2
+{
+    position: fixed;
+    top: 320px;
+    left: 220px;
+    background-image: url(https://workingwithdog.com/wp-content/uploads/2016/05/new_instagram_logo-1024x1024.jpg);
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightslategray;
+    width: 125px;
+    height: 125px;
+    z-index: 1;
+}
+.box3
+{
+    position: fixed;
+    top: 400px;
+    left: 300px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png);
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightslategray;
+    width: 175px;
+    height: 175px;
+    z-index: 3;
+}
+.box4
+{
+    position: fixed;
+    top: 220px;
+    left: 420px;
+    background-image: url(https://image.flaticon.com/icons/png/512/124/124034.png);
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightslategray;
+    width: 200px;
+    height: 200px;
+    z-index: 4;
+}
+.box5
+{
+    position: fixed;
+    top: 350px;
+    left: 550px;
+    background-image: url(https://www.gannett-cdn.com/presto/2020/10/11/USAT/62f94775-642e-4e4f-a130-bb855f18960f-image001.png?width=376&height=374&fit=crop&format=pjpg&auto=webp);
+    background-size: contain;
+    box-shadow: 0 0 20px lightslategray;
+    width: 175px;
+    height: 175px;
+    z-index: 2;
+}
+.box6
+{
+    position: fixed;
+    top: 280px;
+    left: 780px;
+    background-image: radial-gradient(navy, red, orange, yellow);
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightslategray;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+}
+.box7
+{
+    position: fixed;
+    top: 380px;
+    left: 880px;
+    background-image: radial-gradient(navy, red, orange, yellow);
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightslategray;
+    width: 200px;
+    height: 200px;
+    z-index: 3;
+}
+.box8
+{
+    position: fixed;
+    top: 350px;
+    left: 1050px;
+    background-image: radial-gradient(navy, red, orange, yellow);
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightslategray;
+    width: 125px;
+    height: 125px;
+    z-index: 2;
+}
+.box9
+{
+    position: fixed;
+    top: 290px;
+    left: 1130px;
+    background-image: radial-gradient(navy, red, orange, yellow);
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightslategray;
+    width: 75px;
+    height: 75px;
+    z-index: 1;
+}

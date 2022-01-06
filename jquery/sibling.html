@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .box
+        {
+            box-shadow: 0 0 50px gray;
+            display: inline-block;     
+            padding: 15px;
+            margin: 50px;
+        }
+        img
+        {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class='box'>
+        <h1>Moksh Doshi</h1>
+        <h3>21</h3>
+        <img src='images/IMG_2993.JPG'><br>
+        <h3>Anand Niketan - 2019</h3>
+        <h3>Ahmedabad University - 2023</h3>
+    </div>
+    <script>
+        $(document).ready(function () {
+        $("img").mouseenter(function () {
+          $(this).parent().css({"box-shadow":"0 0 40px red","border-radius":"20px"});
+          $(this).nextAll().css({"color":"green","text-decoration": "underline"});
+          $(this).prevAll().css({"color":"blue","font-style": "italic"});
+          $(this).css({"border-radius":"20px"});
+        });
+        $("img").mouseleave(function () {
+          $(this).parent().css({"box-shadow":"0 0 50px gray","border-radius":"0px"});
+          $(this).prevAll().css({"color":"black","font-style": "unset"});
+          $(this).nextAll().css({"color":"black","text-decoration": "none"});
+          $(this).css({"border-radius":"0px"});
+        });
+      });
+    </script>
+</body>
+</html>

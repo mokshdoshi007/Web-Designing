@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body
+        {
+            background-image: url(https://i.pinimg.com/originals/b9/b8/64/b9b8642f9db6c229dd62dc5615ab5bdd.jpg);
+            background-size: cover;
+            background-repeat: no-repeat    ;
+        }
+        .nav
+        {
+            background-color: white;
+            align-content: center;
+            float: left;
+            margin: 5%;
+            width:90%;
+        }
+        .nav ol
+        {
+            color: blueviolet;
+            list-style: none;
+            overflow: hidden;
+        }
+        .navhov1
+        {
+            display: inline;
+            margin-right: 20px;
+            font-size: large;
+            margin-right: 4%;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;            
+        }
+        .navhov2
+        {
+            background-color: blueviolet;
+            color: white;
+        }
+        .navhov3
+        {
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+<body style="margin: 0;">
+    <div class="nav">
+        <ol>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            <li style="float: right; position:relative; bottom:20px;"><img src="images/f6ab2449-fec1-4ee0-b471-7bbadfd4dbd3.png" alt="" height="50px"></li>
+        </ol>            
+    </div>
+    <script>
+        $(document).ready(function()
+        {
+            $("li").addClass("navhov1");
+            $("li").mouseenter(function()
+            {
+                $(this).addClass("navhov2");
+            });
+            $("li").mouseleave(function()
+            {
+                $(this).removeClass("navhov2");
+            });
+            $("li").click(function()
+            {
+                $(this).addClass("navhov3");
+            });
+        });
+    </script>
+</body>
+</html>

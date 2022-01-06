@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .back
+        { 
+            position: relative;
+            background-image: url(https://media.gettyimages.com/videos/white-gift-box-opening-on-red-background-in-4-k-resolution-video-id1075687942?s=640x640);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 600px;
+            overflow: hidden;
+        }
+        .heading
+        {
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 200%;
+            text-align: center;
+            letter-spacing: 20px;
+            color: white;
+        }
+        .round
+        {
+            position: absolute;
+            left: 10%;
+            bottom: -15%;
+            text-align: center;
+            background-image: linear-gradient(to left, rgb(255,30,105),rgb(200,140,0));
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+        .row 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+
+        .column 
+        {
+            flex: 50%;
+            padding: 0 4px;
+            padding: 10%;
+        }
+
+.column img {
+    box-shadow: 0 0 20px lightslategray;
+    padding: 10px;
+    margin-left: 2%;
+    width: 45%;
+    
+  margin-top: 8px;
+  vertical-align: middle;
+}
+    </style>
+</head>
+<body>
+    <div class="back">
+        <div class="heading">
+            <h1> <u> LOVED UP </u></h1>
+            <h3>WITH BAGS OF LOVE</h3>
+        </div>
+        <div class="round">
+            <h3>WIN</h3>
+            <p>A custom heart combo</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="https://images.news18.com/ibnlive/uploads/2021/03/1615699843_149434951_711212419593042_6085887706781345957_n-1.jpg" alt="">
+            <img src="https://www.thestatesman.com/wp-content/uploads/2019/11/d2ad7402f9acd1c822ca7dce0188b9bf.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

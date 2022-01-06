@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body
+        {margin: 0;}
+      img {
+        width: 30px;
+        display: none;
+      }
+      .nav2 {
+        background-color: #eb5757;
+        float: right;
+        width: 100%;
+        text-align: right;
+      }
+      .nav2 ol {
+        color: white;
+        list-style: none;
+      }
+      .nav2 ol li {
+        display: inline;
+        margin-right: 20px;
+        font-size: large;
+      }
+      .nav2 ol li:hover {
+        color: black;
+      }
+      .nav {
+        background-color: #eb5757a6;
+        float: right;
+        text-align: right;
+        display: none;
+      }
+      @media screen and (max-width: 500px) {
+        .nav2 ol {
+          display: none;
+        }
+        img {
+          margin: 10px;
+          float: right;
+          width: 35px;
+          display: flex;
+        }   
+      }
+
+      .nav ol {
+        color: black;
+        list-style: none;
+      }
+      .nav ol li {
+        margin-right: 20px;
+        font-size: large;
+      }
+      .nav ol li:hover {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav2">
+      <img src="images/Hamburger_icon.svg (1).png" alt="" />
+      <ol>
+        <li>Home</li>
+        <li>About</li>
+        <li>Shop</li>
+        <li>Something</li>
+        <li>Contact</li>
+      </ol>
+    </div>
+    <div id="nav" class="nav">
+      <ol>
+        <li>Home</li>
+        <li>About</li>
+        <li>Shop</li>
+        <li>Something</li>
+        <li>Contact</li>
+      </ol>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("img").click(function () {
+          $("#nav").slideToggle(1200);
+        });
+      });
+    </script>
+  </body>
+</html>

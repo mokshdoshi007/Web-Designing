@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="nav2">
+        <ol>
+          <li>Home</li>
+          <li>About</li>
+          <li>Shop</li>
+          <li>Something</li>
+          <li>Contact</li>
+        </ol>
+      </div>
+      <script>
+          $(document).ready(function()
+          {
+            $("body").css({
+                margin:"0"
+            });
+            $("#nav2").css(
+                {
+                    "background-color": "#eb5757",
+                    float: "right",
+                    width: "100%",
+                    "text-align": "right"
+                });
+            $("#nav2 ol").css(
+                {
+                    color: "white",
+                    "list-style": "none"
+                });
+            $("#nav2 ol li").css(
+                {
+                    display: "inline",
+                    "margin-right": "20px",
+                    "font-size": "large",
+                });            
+        });
+      </script>
+</body>
+</html>

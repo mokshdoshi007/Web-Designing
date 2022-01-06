@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        div
+        {
+            margin: 5%;
+            width: 200px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            box-shadow: 0px 0px 30px gray;
+            background-color: black;
+            border-radius: 20px;
+            color: white;
+        }
+        button
+        {
+            background-color: rgb(185, 14, 185);
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 25px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <center>
+        <img src="images/IMG_2993.JPG" style="width: 200px;" alt="">
+        <h2>Moksh Doshi</h3>
+        <button>Hide</button>
+    </center>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h2").hide();
+                this.innerHTML="Show"
+            });
+            $("button").dblclick(function(){
+                $("h2").show();
+                this.innerHTML="Hide"
+            });
+        })
+    </script>
+</body>
+</html>

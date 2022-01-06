@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body
+        {
+            padding: 50px;
+        }
+        .greyback1
+        {
+            position: fixed;
+            height: 420px;
+            width: 400px;
+            z-index: 0;
+            background-color: slategrey;
+        }
+        .greyback2
+        {
+            position: fixed;
+            height: 420px;
+            width: 400px;
+            z-index: 0;
+            background-color: darkgrey;
+        }
+        .image
+        {
+            position: fixed;
+            top: 70px;
+            height: 400px;
+            width: 400px;
+            z-index: 1;
+            background-size: cover;
+            background-image: url(images/IMG_2993.JPG);
+        }
+        .image2
+        {
+            transform: scale(1.1);
+        }
+        .frontwhite
+        {
+            position: fixed;
+            top: 270px;
+            height: 200px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.5);
+            z-index: 2;
+        }
+        h1
+        {
+            margin-top: 40px;
+            margin-left: 40px;
+            font-size: 200%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        button
+        {
+            margin-top: 10px;
+            margin-left: 40px;
+            padding: 10px;
+            background: transparent;
+            border: 1px solid black;
+            font-size: 150%;
+        }
+        .box
+        {
+            transform: scale(1.1);
+            transform: rotate(7deg);
+        }
+        .box1
+        {
+            transform: scale(1.1);
+            transform: rotate(-7deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="main" class="main">
+    <div id="box1" class="greyback1"></div>
+    <div id="box" class="greyback2"></div>
+    <div id="image" class="image"></div>
+    <div id="frontwhite" class="frontwhite">
+        <h1>Moksh Doshi</h1>
+        <button>Know More</button>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+        $("#main").mouseenter(function () {
+            $("#box").addClass("box");
+            $("#box1").addClass("box1");
+            $("#image").addClass("image2");
+            $("#frontwhite").addClass("image2");
+            $("button").css({"color":"white","background-color":"black"});                
+        });
+        $("#main").mouseleave(function () {
+            $("#box").removeClass("box");
+            $("#box1").removeClass("box1");
+            $("#image").removeClass("image2");
+            $("#frontwhite").removeClass("image2");
+            $("button").css({"color":"black","background-color":"transparent"}); 
+        });
+      });
+    </script>
+</body>
+</html>
