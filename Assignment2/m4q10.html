@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <button>Change Image</button>
+    <br><br>
+    <img id="myimg" style="width: 250px; height: 375px;" src="https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                document.getElementById("myimg").src = "https://images.unsplash.com/photo-1612012460576-5d51b5b04b00?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbHBhcGVyJTIwZm9yJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80";
+            });
+        });
+    </script>
+</body>
+</html>

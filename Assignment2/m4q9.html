@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .p1
+        {
+            background-color: palevioletred;
+            color: white;
+            padding: 10px;
+        }
+        .p2
+        {
+            background-color: grey;
+            color: white;
+            padding: 10px;
+        }
+        .p3
+        {
+            background-color: aqua;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">On Mouse Hover</p>
+    <p id="p2">On Mouse Leave</p>
+    <p id="p3">On Mouse Click</p>
+    
+    <script>
+        $(document).ready(function()
+        {
+            $("#p3").click(function()
+            {
+                $(this).addClass("p3");
+            });
+            $("#p1").mouseenter(function()
+            {
+                $(this).addClass("p1");
+            });
+            $("#p1").mouseleave(function()
+            {
+                $(this).removeClass("p1");
+            });
+            $("#p2").mouseleave(function()
+            {
+                $(this).addClass("p2");
+            });
+        });
+    </script>
+</body>
+</html>

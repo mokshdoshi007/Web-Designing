@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        img{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            z-index: 2;
+        }
+        .menu 
+        {
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+      .arrow {
+        float: right;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        padding: 3px;
+      }
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+      p {
+        width: 250px;
+        margin: 0;
+        color: white;
+        padding: 10px;
+      }
+      .llink
+      {
+          position: relative;
+          top: -38.5px;
+          left: 270px;
+      }
+      .llink,.link2,.link3{
+          display: none;
+      }
+      .content
+      {
+        background-color: rgba(17, 146, 146, 0.75);
+         width: 800px; 
+         height: 400px;
+         text-align: center;
+         color: white;
+         font-size: 125%;
+      }
+      #close
+      {
+          display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="open" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2048px-Hamburger_icon.svg.png" alt="">  
+    <img id="close" style="left: 290px;" src="https://i.pinimg.com/originals/d0/17/47/d01747c4285afa4e7a6e8656c9cd60cb.png" alt="">
+    <div id="menu" class="menu">
+      <p style="background-color: aqua">Link 1</p>
+      <p style="background-color: rgb(6, 87, 87)">Link 2<i id="l2" class="arrow down"></i></p>
+      <div id="link2" class="link2">
+        <p style="background-color: rgb(5, 177, 177)">Submenu Link 1</p>
+        <p style="background-color: rgb(5, 177, 177)">Submenu Link 2</p>
+        <p style="background-color: rgb(6, 87, 87)">Submenu Link 3<i id="l3" class="arrow down"></i></p>
+        <div id="link3" class="link3">
+          <p style="background-color: rgb(5, 177, 177)">Submenu Link 1</p>
+          <p style="background-color: aqua">Submenu Link 2</p>
+          <p style="background-color: rgb(5, 177, 177)">Submenu Link 3<i id="ll" class="arrow right"></i></p>
+          <div id="llink" class="llink">
+            <p style="background-color: rgb(6, 87, 87)">Last Link</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="padding: 100px; background-image: url(https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260); width: 800px; height: 400px;">
+        <div class="content">
+            <center>
+            <h1>User Friendly Menu</h1>
+            <p>Please Click on Arrows inside Menu.<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sunt non error. Perferendis laudantium minus doloribus nisi ullam nobis dolores possimus? Hic voluptatem, maxime excepturi perferendis natus alias unde reprehenderit?</p>
+            </center>
+        </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#l2").click(function () {
+            $("#link2").slideToggle(1000);
+        });
+        $("#l3").click(function () {
+            $("#link3").slideToggle(1000);
+        });
+        $("#ll").click(function () {
+            $("#llink").animate({width: 'toggle'},1500);
+        });
+        $("#open").click(function () {
+            $(this).css("display","none");
+            $("#close").css("display","block");
+            $("#menu").css("display","block");
+        });
+        $("#close").click(function () {
+            $(this).css("display","none");
+            $("#open").css("display","block");
+            $("#menu").css("display","none");
+        });
+      });
+    </script>
+  </body>
+</html>

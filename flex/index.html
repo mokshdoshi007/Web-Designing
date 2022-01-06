@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .navbar div
+        {
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            flex-direction: row;
+            font-size: 20px;
+        }
+        .navbar div:hover
+        {
+            color: seagreen;
+        }
+        .navbar
+        {
+            flex-direction: row;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .main
+        {
+            background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7) ), url(https://cdn.thegentlemansjournal.com/wp-content/uploads/2017/08/header-how-to-organise-your-desk-reorganise-desktop-office-efficient-efficiency-900x600-c-center.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main div
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            text-align: center;
+            width: 50%;
+        }
+        button
+        {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 25px;
+            color: white;
+            border: none;
+            background-color: rgb(21, 141, 180);
+        }
+        .tiles
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .tiles img
+        {
+            object-fit: cover;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <div style="width: 50%;">Logo</div>
+    <div style="width: 50%;">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Styleguide</div>
+        <div>Blog</div>
+        <div>Contact Us</div>
+    </div>
+    </div>
+    <div class="main">
+        <div><h1>Lorem Ipsum is Simply</h1></div>
+        <div><h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, voluptates a soluta vitae quasi delectus. Delectus earum quia natus beatae ex recusandae aliquam? Optio rem animi, commodi consequatur quibusdam ab!</h4></div>
+        <div><button>READ MORE</button></div>
+    </div>
+    <div class="tiles">
+        <div><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt=""></div>
+        <div><img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477" alt=""></div>
+        <div><img src="https://iso.500px.com/wp-content/uploads/2021/02/Torres-Del-Paine-Sunset-By-Paul-Reiffer-2-1500x1000.jpg" alt=""></div>
+    </div>
+</body>
+</html>

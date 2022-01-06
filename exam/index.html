@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resume</title>
+    <style>
+        body
+        {
+            background-color: #000000e7;
+        }
+        .navmain
+        {
+            position: fixed;
+            top: 0;
+            background-color: red;
+        }
+        
+        .navmain ol li
+        {
+            display: inline;
+            color: white;
+            margin-right: 3%;
+        }
+        .navmain ol li:hover
+        {
+            color: #0BCEAF;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #0BCEAF;
+        }
+        .home
+        {
+            color: white;
+            margin-top: 10%;
+            margin-left: 10%;
+        }
+        h1,h2,h3,h4,h5,h6
+        {
+            font-size: 240%;
+        }
+        .home button
+        {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border: none;
+            background-color: #0BCEAF;
+            font-weight: bold;
+            color: white;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .about div, .experiences div
+        {
+            float: left;
+            width: 50%;
+            color: white;
+        }
+        .aboutbuttons button
+        {
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #0BCEAF;
+            color: white;
+            background-color: transparent;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .whatido, .pricing, .contact
+        {
+            padding-top: 8%;
+            clear: both;
+            color: white;
+        }
+        .whatido div
+        {
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #272727e7;
+            float: left;
+            width: 25%;
+            margin-right: 5%;
+            color: white;
+            box-shadow: 10px 10px 20px 0 #000000e7;
+        }
+        .pricing div h2
+        {
+            color: #0BCEAF;
+        }
+        .pricing div
+        {
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #272727e7;
+            float: left;
+            width: 25%;
+            margin-right: 5%;
+            color: white;
+            box-shadow: 10px 10px 20px 0 #000000e7;
+            text-align: center;
+            padding-bottom: 4%;
+        }
+        .contact div
+        {
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #272727e7;
+            float: left;
+            width: 25%;
+            margin-right: 5%;
+            color: white;
+            box-shadow: 10px 10px 20px 0 #000000e7;
+            text-align: center;
+        }
+        .pricing button
+        {
+            margin-top: 5%;
+            border-radius: 25px; 
+            border: none; 
+            background-color: #0BCEAF;
+             font-weight: bold; 
+             color: white; 
+             padding-left: 30px; 
+             padding-right: 30px; 
+             padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .experiences div
+        {
+            padding-top: 7%;
+            float: left;
+            width: 45%;
+            color: white;
+        }
+        .education, .experience
+        {
+            margin-left: 5%;
+        }
+        .education div, .experience div
+        {
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #272727e7;
+            float: left;
+            width: 80%;            
+            margin-bottom: 5%;
+            color: white;
+            box-shadow: 10px 10px 20px 0 #000000e7;   
+        }
+        .enquiry
+        {
+            clear: both;
+            padding-top: 10%;
+            margin-left: 10%;
+            width: 40%;
+        }
+        .enquiry input::placeholder,textarea::placeholder
+        {
+            color: white;
+        }
+        .enquiry input,textarea
+        {
+            border: 1px solid white;
+            color: white;
+            background: transparent;
+            margin-bottom: 5%;
+            margin-right: 6%;
+            padding: 3%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navmain">
+        <ol style="position: fixed; right: 0; width: 50%; font-size: 125%;">
+            <li>Home</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Experience</li>
+            <li>Pricing</li>
+            <li>Contact</li>
+        </ol>
+    </div>
+    <div class="home">
+        <button>Hello I'm</button>
+        <h1>Mridul Rathore</h1>
+        <h3>Android Developer / Web Designer</h3>
+        <p>
+            mridulmr@outlook.com <br><br>
+            +91 8947822458 <br><br>
+            B - 18, Jodhpur, Rajasthan, India
+        </p>
+    </div>
+    <div class="about" style="height: max-content;">
+        <div>
+            <img style="width: 80%; padding: 10%;" src="images/sir.jpg" alt="">
+        </div>
+        <div>
+            <h2 style="margin-top: 15%;">About Me</h2>
+            <p style="width: 80%; line-height: 24px;">“I am unique. I have different talents and abilities. I don’t have to always follow in the footsteps of others. And most important, i should always remind myself that i don't have to do what everyone else is doing and have a responsibility to develop the talents i have been given. There is nothing more rare, nor more beautiful, than a woman being unapologetically herself; comfortable in her perfect imperfection. To me, that is the true essence of beauty.”</p>
+            <div class="aboutbuttons" style="width: 70%;">
+                <button>Android Development</button>
+                <button>HTML</button>
+                <button>CSS</button>
+                <button>Bootstrap</button>
+                <button>jQuery</button>
+                <button>MySQL</button>
+                <button>React.JS</button>
+                <button>React Native</button>
+                <button>html5</button>
+                <button>css3</button>
+                <button>JavaScript</button>
+            </div>
+            <br><br><br><br><br><br><br><br><br>
+            <button style="border-radius: 25px; border: none; background-color: #0BCEAF; font-weight: bold; color: white; padding-left: 30px; padding-right: 30px; padding-top: 10px;
+            padding-bottom: 10px;">Download CV</button>
+        </div>
+    </div>
+    <br><br>
+    <div class="whatido">
+        <h1 style="text-align: center;">What I do</h2>
+        <div style="margin-left: 1%;">
+            <h3>Web Design</h3>
+            <p>Have an Experience more than 3 Years.</p>
+        </div>
+        <div>
+            <h3>Web Development</h3>
+            <p>Have an Experience more than 3 Years.</p>
+        </div>
+        <div>
+            <h3>App Development</h3>
+            <p>Have an Experience more than 2 Years.</p>
+        </div>
+    </div>
+    <div class="experiences">
+        <div class="education">
+            <h2>Education</h2>
+            <div>
+                <p style="font-size: 150%;">B.Tech From <i style="color: #0BCEAF;">JIET Group of Institute</i></p>
+                <p style="color: #0BCEAF;">2014 - 2018</p>
+                <p>Completed my B-Tech in Subject - Computer Science and Engg.</p>
+            </div>
+            <div>
+                <p style="font-size: 150%;">12th From <i style="color: #0BCEAF;">Williams Academy</i></p>
+                <p style="color: #0BCEAF;">2013 - 2014</p>
+                <p>Completed my Graduation in Subject - Mathematics and Science.</p>
+            </div>
+            <div>
+                <p style="font-size: 150%;">10th From <i style="color: #0BCEAF;">Manthan Groups</i></p>
+                <p style="color: #0BCEAF;">2011 - 2012</p>
+                <p>With lots of Efforts and Grace Completed my Pre Schoolings.</p>
+            </div>
+        </div>
+        <div class="experience">
+            <h2>Work Experience</h2>
+            <div>
+                <p style="font-size: 150%;">Android Developer(Intern)<i style="color: #0BCEAF;"> 360 Techno</i></p>
+                <p style="color: #0BCEAF;">2019 - 2019</p>
+                <p>Responsibility : <br>
+                    Android Application <br>
+                    Front-End Android U <br></p> 
+            </div>
+            <div>
+                <p style="font-size: 150%;">Android(Developer/Trainer) From <i style="color: #0BCEAF;">Tops Technologies</i></p>
+                <p style="color: #0BCEAF;">2019 - Current</p>
+                <p>Responsibility : <br>
+                    Android Tranier <br>
+                    Web Design Tranier <br>
+                    Java Trainer <br>
+                    Kids Trainer</p>
+            </div>
+            <div style="width: 80%;">
+                <p style="font-size: 150%;">Freelancer From <i style="color: #0BCEAF;">Freelance Job</i></p>
+                <p style="color: #0BCEAF;">2015 - Current</p>
+                <p>Responsibility : <br>
+                    Android Application Developer <br>
+                    Website Designer</p>
+            </div>
+        </div>
+    </div>
+    <div class="pricing">
+        <h1 style="text-align: center;">Pricing</h2>
+        <div style="margin-left: 1%;">
+            <h3>Full Time Work</h3>
+            <p>I am available for full time</p>
+            <h2>$800</h2>
+            <p>Web Design <br>
+                App Design <br>
+                Web Development <br>
+                App Development</p>
+            <button>Hire Me</button>
+        </div>
+        <div>
+            <h3>Fixed Price Project</h3>
+            <p>I am available for fixed roles</p>
+            <h2>$500</h2>
+            <p>Web Design <br>
+                App Design <br>
+                Web Development <br>
+                App Development</p>
+            <button>Hire Me</button>
+        </div>
+        <div>
+            <h3>Hourly Work</h3>
+            <p>I am available for Hourly Projects</p>
+            <h2>$80</h2>
+            <p>Web Design <br>
+                App Design <br>
+                Web Development <br>
+                App Development</p>
+            <button>Hire Me</button>
+        </div>
+    </div>
+    <div class="contact">
+        <h1 style="text-align: center;">Contact Me</h2>
+        <div style="margin-left: 1%;">
+            <h3>Address</h3>
+            <p>B-18, Prithviraj Nagar <br>
+                Jodhpur,Rajasthan</p>
+        </div>
+        <div>
+            <h3>Email</h3>
+            <p>mridulmr@outlook.com <br>
+                mridulrathor@hotmail.com</p>
+        </div>
+        <div>
+            <h3>Phone</h3>
+            <p>+918947822458 <br>
+                +919024973907</p>
+        </div>
+    </div>
+    <div class="enquiry">
+        <input type="text" style="width: 40%;" placeholder="Name">
+        <input type="text" style="width: 40%; margin-right: 0;" placeholder="Mobile Number">
+        <input type="email" style="width: 100%;" placeholder="Your Email">
+        <textarea placeholder="Your Message" rows="10" style="width: 100%;"></textarea>
+        <button style="border-radius: 25px; border: none; background-color: #0BCEAF; font-weight: bold; color: white; padding-left: 30px; padding-right: 30px; padding-top: 10px;
+            padding-bottom: 10px; width: 100%;">Send Message</button>
+            <br>
+            <p style="color: white; margin-top: 15%; margin-bottom: 15%;">All right reserved Moksh Doshi @ 2021</p>
+    </div>
+</body>
+</html>

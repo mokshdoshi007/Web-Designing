@@ -1,0 +1,21 @@
+body
+{
+    font-size: 200%;
+}
+.link1
+{
+    color: black;
+    text-decoration: line-through;
+}
+.link2
+{
+    color: white;
+    background-color: pink;
+    text-decoration: none;
+}
+.link3
+{
+    color: cyan;
+    text-decoration: none;
+    font-style: italic;
+}

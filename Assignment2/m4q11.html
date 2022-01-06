@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <input type="number" name="" id="num1">
+    <input type="number" name="" id="num2">
+    <button onclick="sum()">Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="divide()">Division</button>
+    <h3 id="result"></h3>
+    <script>
+        var a,b
+        function getval()
+        {
+            a = document.getElementById("num1").value;
+            b = document.getElementById("num2").value;
+            if(a=="")
+            {
+                document.getElementById("num1").style.border="2px solid red"
+            }
+            else
+            {
+                document.getElementById("num1").style.border="2px solid green"
+                if(b=="")
+                {
+                    document.getElementById("num2").style.border="2px solid red"
+                }
+                else
+                {
+                    document.getElementById("num2").style.border="2px solid green"
+                }
+            }
+        }
+        function sum()
+        {
+            getval()
+            var answer = parseInt(a)+parseInt(b)
+            document.getElementById('result').innerHTML="Addition is "+answer
+        }
+        function sub()
+        {
+            getval()
+            var answer = parseInt(a)-parseInt(b)
+            document.getElementById('result').innerHTML="Subtraction is "+answer
+        }
+        function mul()
+        {
+            getval()
+            var answer = parseInt(a)*parseInt(b)
+            document.getElementById('result').innerHTML="Multiplication is "+answer
+        }
+        function divide()
+        {
+            getval()
+            var answer = parseInt(a)/parseInt(b)
+            document.getElementById('result').innerHTML="Division is "+answer
+        }
+    </script>
+</body>
+</html>
